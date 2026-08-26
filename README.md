@@ -1,0 +1,41 @@
+﻿# Task API
+
+A simple CRUD API built with **FastAPI**, **SQLModel**, and **SQLite**. This project demonstrates the fundamentals of building REST APIs with task creation, retrieval, updating, and deletion while persisting data in a local SQLite database.
+
+This project is based on the FlyRank Backend Track Week 2 CRUD API assignment, with SQLite persistence added as an extension to the original in-memory implementation.
+
+## Features
+
+- Create tasks
+- Get all tasks
+- Get a task by ID
+- Update tasks
+- Delete tasks
+- Persistent SQLite database
+- SQLModel database models and sessions
+- Request and response validation
+- HTTP error handling with FastAPI
+- Automatic API documentation
+- Development workflow using `uv`
+
+## Tech Stack
+
+- Python 3.10+
+- FastAPI
+- SQLModel
+- SQLite
+- Uvicorn
+- uv
+
+## Project Structure
+
+```text
+task-api/
+├── main.py
+├── tasks.db
+├── README.md
+├── pyproject.toml
+└── uv.lock
+
+## Next Steps
+-containerized Fastapi app 
