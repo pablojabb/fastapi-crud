@@ -1,0 +1,13 @@
+services:
+  api:
+    build:
+      context: .
+    ports:
+      - "3000:8000"
+    environment:
+      DATABASE_URL: sqlite:////data/tasks.db
+    volumes:
+      - taskdata:/data
+
+volumes:
+  taskdata:
