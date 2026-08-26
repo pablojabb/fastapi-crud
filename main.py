@@ -1,3 +1,5 @@
+import os
+
 from fastapi import FastAPI, HTTPException
 from sqlmodel import Field, Session, SQLModel, create_engine, select
 
@@ -10,7 +12,7 @@ class Task(SQLModel, table=True):
     done: bool = False
 
 
-DATABASE_URL = "sqlite:///tasks.db"
+DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///tasks.db")
 
 engine = create_engine(
     DATABASE_URL,
